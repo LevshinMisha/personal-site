@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flag__circle {
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+}
