@@ -1,13 +1,18 @@
 import React from 'react';
+import Header from './components/app/header';
+import MainContent from './components/app/main-layout';
+import Footer from './components/app/footer';
 
-import '../common/style.css';
+import './index.css';
 
 class App extends React.Component {
   render() {
     return (
-      <div className='flag'>
-        <div className='flag__circle' />
-      </div>
+      <React.Fragment>
+        <Header />
+        <MainContent />
+        <Footer />
+      </React.Fragment>
     )
   }
 }

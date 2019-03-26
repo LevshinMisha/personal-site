@@ -13,8 +13,8 @@ export const createServer = (mode, port, onListen) => {
     const compiler = require('webpack')(config);
     const webpackDev = require("webpack-dev-middleware");
     const webpackHot = require("webpack-hot-middleware");
-    app.use(framework.route, webpackDev(compiler, { noInfo: true }));
-    app.use(`${framework.route}/__webpack_hmr`, webpackHot(compiler, { noInfo: true }));
+    app.use(framework.route, webpackDev(compiler));
+    app.use(webpackHot(compiler, { noInfo: true, path: `${framework.route}/__webpack_hmr` }));
   }
 
   if (mode === 'production')
