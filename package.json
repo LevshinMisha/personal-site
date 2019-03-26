@@ -11,7 +11,7 @@
     "build-gulp": "rmdir-cli build && gulp build",
     "env-build-gulp": "gulp clear-build build:env --series",
     "watch-webpack": "cross-env NODE_ENV=dev babel-node ./src/server/index.js",
-    "watch-parcel": "parcel ./src/**/*.html -d build/parcel",
+    "watch-parcel": "parcel watch ./src/**/*.html -d build/parcel --public-url /parcel",
     "watch-gulp": "gulp build watch --series"
   },
   "license": "ISC",

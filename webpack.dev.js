@@ -2,9 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-//const MinifyPlugin = require("babel-minify-webpack-plugin");
-//const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-//const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = webType => ({
   mode: 'development',
